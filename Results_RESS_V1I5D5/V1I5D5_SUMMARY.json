@@ -1,0 +1,16 @@
+{
+  "version": "V1-I.5-D.5",
+  "overall_pass": true,
+  "n_checks": 20,
+  "hard_failures": [],
+  "BTC_D3_status": "FAIL retained",
+  "D4_status": "dry-run only; no final gamma locked",
+  "next_action": "close D-stage and proceed to full TRAIN->VALIDATION->TEST pipeline",
+  "guards": {
+    "no_new_simulation": true,
+    "no_validation": true,
+    "no_test": true,
+    "no_policy_selection": true,
+    "no_radius_selection": true
+  }
+}

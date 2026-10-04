@@ -1,0 +1,21 @@
+check,pass_,detail
+required_artifacts,True,all present
+protocol_hash,True,0791be105f4afd18170c7e5b12a74078afc684815414f713ecb80f46a99bcf50
+locked_design,True,alpha=.95 eps=delta=.08
+gamma_grid,True,11-point grid
+objective_grid,True,88/88 cells
+finite_objectives,True,88/88
+localized_ge_nominal,True,min margin 1.286e-03
+global_ge_localized,True,min margin 1.574e-02
+asset_specific_crn,True,"BTC/ETH separate, CRN true"
+btc_D3_fail_retained,True,FAIL retained; diagnosed rare-outer-path sensitivity
+no_final_gamma_lock,True,NO FINAL GAMMA LOCKED IN D.4
+BTCUSDT_atoms,True,n=16
+BTCUSDT_seeds,True,"shape=(16, 64)"
+ETHUSDT_atoms,True,n=16
+ETHUSDT_seeds,True,"shape=(16, 64)"
+all_matrix_shapes_finite,True,22/22 matrices
+EC_recompute,True,max err 9.736e-17
+CVaR_recompute,True,max err 8.674e-17
+argmins_provisional,True,8/8 provisional
+semantic_guards,True,"['train_only', 'no_validation', 'no_test', 'no_radius_selection', 'no_asset_pooling', 'theta_not_policy_input', 'matched_delta_equals_epsilon_is_not_calibration_equivalence', 'D4_dry_run_not_publication_estimate']"
