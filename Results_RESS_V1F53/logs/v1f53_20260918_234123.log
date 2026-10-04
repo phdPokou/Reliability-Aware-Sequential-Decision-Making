@@ -1,0 +1,38 @@
+2026-09-18 23:41:23,739 | INFO | PHASE 1 CPU/MKL preprocessing
+2026-09-18 23:41:25,120 | INFO | CPU preprocessing DONE | rows=404483 train=236052
+2026-09-18 23:41:28,410 | INFO | PHASE 2 Torch | device=cuda
+2026-09-18 23:41:31,149 | INFO | M1_iid_latent epoch=1 negELBO=3.99870 train_pred_theta_mean=1.000000 pred_theta_sd=0.000 prior_sd_mean=0.604 nu=3.394
+2026-09-18 23:41:32,962 | INFO | M1_iid_latent epoch=5 negELBO=3.78335 train_pred_theta_mean=1.000000 pred_theta_sd=0.000 prior_sd_mean=0.594 nu=3.608
+2026-09-18 23:41:35,209 | INFO | M1_iid_latent epoch=10 negELBO=3.76099 train_pred_theta_mean=1.000000 pred_theta_sd=0.000 prior_sd_mean=0.602 nu=3.906
+2026-09-18 23:41:37,478 | INFO | M1_iid_latent epoch=15 negELBO=3.75498 train_pred_theta_mean=1.000000 pred_theta_sd=0.000 prior_sd_mean=0.621 nu=4.170
+2026-09-18 23:41:39,719 | INFO | M1_iid_latent epoch=20 negELBO=3.74755 train_pred_theta_mean=1.000000 pred_theta_sd=0.000 prior_sd_mean=0.646 nu=4.416
+2026-09-18 23:41:41,941 | INFO | M1_iid_latent epoch=25 negELBO=3.73908 train_pred_theta_mean=1.000000 pred_theta_sd=0.000 prior_sd_mean=0.676 nu=4.651
+2026-09-18 23:41:44,194 | INFO | M1_iid_latent epoch=30 negELBO=3.72790 train_pred_theta_mean=1.000000 pred_theta_sd=0.000 prior_sd_mean=0.709 nu=4.878
+2026-09-18 23:41:46,469 | INFO | M1_iid_latent epoch=35 negELBO=3.71640 train_pred_theta_mean=1.000000 pred_theta_sd=0.000 prior_sd_mean=0.744 nu=5.100
+2026-09-18 23:41:48,770 | INFO | M1_iid_latent epoch=40 negELBO=3.70659 train_pred_theta_mean=1.000000 pred_theta_sd=0.000 prior_sd_mean=0.777 nu=5.317
+2026-09-18 23:41:51,094 | INFO | M1_iid_latent epoch=45 negELBO=3.69678 train_pred_theta_mean=1.000000 pred_theta_sd=0.000 prior_sd_mean=0.807 nu=5.529
+2026-09-18 23:41:53,424 | INFO | M1_iid_latent epoch=50 negELBO=3.68773 train_pred_theta_mean=1.000000 pred_theta_sd=0.000 prior_sd_mean=0.834 nu=5.738
+2026-09-18 23:41:53,989 | INFO | M2_predictive_full epoch=1 negELBO=3.93955 train_pred_theta_mean=1.000001 pred_theta_sd=0.298 prior_sd_mean=0.825 nu=3.335
+2026-09-18 23:41:56,034 | INFO | M2_predictive_full epoch=5 negELBO=3.83501 train_pred_theta_mean=0.999999 pred_theta_sd=0.049 prior_sd_mean=0.603 nu=3.357
+2026-09-18 23:41:58,579 | INFO | M2_predictive_full epoch=10 negELBO=3.81160 train_pred_theta_mean=1.000000 pred_theta_sd=0.073 prior_sd_mean=0.523 nu=3.673
+2026-09-18 23:42:01,159 | INFO | M2_predictive_full epoch=15 negELBO=3.76402 train_pred_theta_mean=0.999999 pred_theta_sd=0.120 prior_sd_mean=0.626 nu=3.946
+2026-09-18 23:42:03,721 | INFO | M2_predictive_full epoch=20 negELBO=3.71512 train_pred_theta_mean=0.999999 pred_theta_sd=0.176 prior_sd_mean=0.735 nu=4.200
+2026-09-18 23:42:06,394 | INFO | M2_predictive_full epoch=25 negELBO=3.68044 train_pred_theta_mean=1.000000 pred_theta_sd=0.214 prior_sd_mean=0.798 nu=4.443
+2026-09-18 23:42:08,972 | INFO | M2_predictive_full epoch=30 negELBO=3.66284 train_pred_theta_mean=1.000000 pred_theta_sd=0.237 prior_sd_mean=0.831 nu=4.677
+2026-09-18 23:42:11,549 | INFO | M2_predictive_full epoch=35 negELBO=3.65233 train_pred_theta_mean=1.000000 pred_theta_sd=0.245 prior_sd_mean=0.848 nu=4.903
+2026-09-18 23:42:14,171 | INFO | M2_predictive_full epoch=40 negELBO=3.64170 train_pred_theta_mean=1.000000 pred_theta_sd=0.243 prior_sd_mean=0.853 nu=5.123
+2026-09-18 23:42:16,759 | INFO | M2_predictive_full epoch=45 negELBO=3.63560 train_pred_theta_mean=1.000000 pred_theta_sd=0.248 prior_sd_mean=0.862 nu=5.342
+2026-09-18 23:42:19,334 | INFO | M2_predictive_full epoch=50 negELBO=3.62693 train_pred_theta_mean=0.999999 pred_theta_sd=0.248 prior_sd_mean=0.870 nu=5.558
+2026-09-18 23:42:19,889 | INFO | M3_predictive_no_rv epoch=1 negELBO=3.88228 train_pred_theta_mean=1.000000 pred_theta_sd=0.268 prior_sd_mean=0.688 nu=3.381
+2026-09-18 23:42:21,929 | INFO | M3_predictive_no_rv epoch=5 negELBO=3.83473 train_pred_theta_mean=1.000000 pred_theta_sd=0.097 prior_sd_mean=0.597 nu=3.426
+2026-09-18 23:42:24,469 | INFO | M3_predictive_no_rv epoch=10 negELBO=3.81980 train_pred_theta_mean=1.000000 pred_theta_sd=0.040 prior_sd_mean=0.505 nu=3.773
+2026-09-18 23:42:27,029 | INFO | M3_predictive_no_rv epoch=15 negELBO=3.77851 train_pred_theta_mean=1.000000 pred_theta_sd=0.083 prior_sd_mean=0.599 nu=4.066
+2026-09-18 23:42:29,589 | INFO | M3_predictive_no_rv epoch=20 negELBO=3.72158 train_pred_theta_mean=1.000000 pred_theta_sd=0.136 prior_sd_mean=0.736 nu=4.340
+2026-09-18 23:42:32,189 | INFO | M3_predictive_no_rv epoch=25 negELBO=3.68119 train_pred_theta_mean=1.000000 pred_theta_sd=0.191 prior_sd_mean=0.813 nu=4.603
+2026-09-18 23:42:34,803 | INFO | M3_predictive_no_rv epoch=30 negELBO=3.66562 train_pred_theta_mean=1.000000 pred_theta_sd=0.225 prior_sd_mean=0.841 nu=4.842
+2026-09-18 23:42:37,449 | INFO | M3_predictive_no_rv epoch=35 negELBO=3.65429 train_pred_theta_mean=0.999999 pred_theta_sd=0.245 prior_sd_mean=0.852 nu=5.062
+2026-09-18 23:42:40,028 | INFO | M3_predictive_no_rv epoch=40 negELBO=3.64985 train_pred_theta_mean=1.000000 pred_theta_sd=0.261 prior_sd_mean=0.864 nu=5.273
+2026-09-18 23:42:42,593 | INFO | M3_predictive_no_rv epoch=45 negELBO=3.64268 train_pred_theta_mean=1.000000 pred_theta_sd=0.268 prior_sd_mean=0.868 nu=5.475
+2026-09-18 23:42:45,420 | INFO | M3_predictive_no_rv epoch=50 negELBO=3.63640 train_pred_theta_mean=1.000000 pred_theta_sd=0.278 prior_sd_mean=0.874 nu=5.673
+2026-09-18 23:42:58,983 | INFO | DONE | ex-ante predictive latent audit complete
+2026-09-18 23:42:58,987 | INFO | No simulator/RL/DRO fitted | Results -> C:\Users\fredy\Downloads\Results_RESS_V1F53

@@ -1,0 +1,4 @@
+model,n_train,mean_train_predictive_theta,normalization_error,max_abs_theta_eval_vs_audit
+M1_iid_latent,236052,0.9999995231628418,-4.76837158203125e-07,0.0
+M2_predictive_full,236052,0.9999990856348726,-9.143651273912923e-07,0.0
+M3_predictive_no_rv,236052,0.9999996147575245,-3.852424754757777e-07,0.0

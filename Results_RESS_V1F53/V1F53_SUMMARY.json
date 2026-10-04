@@ -1,0 +1,39 @@
+{
+  "input_panel": "C:\\Users\\fredy\\Downloads\\Results_RESS_V1D\\panels\\v1d_causal_grid_panel.parquet",
+  "rows": 404483,
+  "grid_seconds": 5,
+  "K": 10,
+  "innovation_vector": [
+    "dlog_mid",
+    "dlog_total_depth",
+    "d_log_depth_ratio"
+  ],
+  "center_predictors": [
+    "lag_dlog_mid",
+    "lag_dlog_total_depth",
+    "lag_d_log_depth_ratio",
+    "lag_log_spread",
+    "lag_imbalance",
+    "lag_log_rv"
+  ],
+  "principal_predictive_model": "M2_predictive_full",
+  "nested_models": [
+    "M0_student",
+    "M1_iid_latent",
+    "M2_predictive_full",
+    "M3_predictive_no_rv"
+  ],
+  "v1f53_role": "stability and tail audit; no clipping and no ex-post alteration of predictive law",
+  "posterior_current_residual_used_for_training_inference": true,
+  "predictive_current_or_future_residual_used": false,
+  "predictive_information": "observable lag features only",
+  "latent_scale_normalization": "global TRAIN mean of predictive E[theta|history] equals 1",
+  "normalization_verified_in_output": "v1f53_global_normalization_check.csv",
+  "extreme_theta_audit": "v1f53_predictive_theta_tail_audit.csv and v1f53_top100_predictive_theta_events.csv",
+  "automatic_model_selection": false,
+  "theta_label": "latent common innovation scale pending mechanism validation",
+  "simulator_fitted": false,
+  "rl_fitted": false,
+  "dro_fitted": false,
+  "development_panel_warning": "First-of-month Tardis sample is not publication-representative."
+}

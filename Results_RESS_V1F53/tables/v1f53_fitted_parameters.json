@@ -1,0 +1,129 @@
+[
+  {
+    "model": "M0_student",
+    "nu": 6.858478546142578,
+    "R": [
+      [
+        1.0,
+        0.06700630486011505,
+        0.42065733671188354
+      ],
+      [
+        0.06700630486011505,
+        1.0,
+        0.07025305926799774
+      ],
+      [
+        0.42065733671188354,
+        0.07025305926799774,
+        0.9999999403953552
+      ]
+    ]
+  },
+  {
+    "model": "M1_iid_latent",
+    "predictors": [
+      "_dummy_zero"
+    ],
+    "nu": 5.737550735473633,
+    "R": [
+      [
+        1.0,
+        0.02559768408536911,
+        0.25070998072624207
+      ],
+      [
+        0.02559768408536911,
+        0.9999999403953552,
+        0.027499714866280556
+      ],
+      [
+        0.25070998072624207,
+        0.027499714866280556,
+        1.0
+      ]
+    ],
+    "train_global_log_normalizer": -1.9780521392822266,
+    "prior_normalization": "mean_train E[theta|observable_history] = 1",
+    "raw_mu_bound": 2.5,
+    "prior_sd_bounds": [
+      0.05,
+      1.5
+    ],
+    "theta_output_clipping": false,
+    "unconditional_prior_sd": 0.8335297107696533
+  },
+  {
+    "model": "M2_predictive_full",
+    "predictors": [
+      "lag_dlog_mid",
+      "lag_dlog_total_depth",
+      "lag_d_log_depth_ratio",
+      "lag_log_spread",
+      "lag_imbalance",
+      "lag_log_rv"
+    ],
+    "nu": 5.557541370391846,
+    "R": [
+      [
+        1.0,
+        0.018359772861003876,
+        0.19544470310211182
+      ],
+      [
+        0.018359772861003876,
+        1.0,
+        0.021109718829393387
+      ],
+      [
+        0.19544470310211182,
+        0.021109718829393387,
+        1.0000001192092896
+      ]
+    ],
+    "train_global_log_normalizer": -2.002476692199707,
+    "prior_normalization": "mean_train E[theta|observable_history] = 1",
+    "raw_mu_bound": 2.5,
+    "prior_sd_bounds": [
+      0.05,
+      1.5
+    ],
+    "theta_output_clipping": false
+  },
+  {
+    "model": "M3_predictive_no_rv",
+    "predictors": [
+      "lag_dlog_mid",
+      "lag_dlog_total_depth",
+      "lag_d_log_depth_ratio",
+      "lag_log_spread",
+      "lag_imbalance"
+    ],
+    "nu": 5.673160552978516,
+    "R": [
+      [
+        1.0,
+        0.01943933218717575,
+        0.20058806240558624
+      ],
+      [
+        0.01943933218717575,
+        1.0000001192092896,
+        0.023957863450050354
+      ],
+      [
+        0.20058806240558624,
+        0.023957863450050354,
+        1.0
+      ]
+    ],
+    "train_global_log_normalizer": -2.0298986434936523,
+    "prior_normalization": "mean_train E[theta|observable_history] = 1",
+    "raw_mu_bound": 2.5,
+    "prior_sd_bounds": [
+      0.05,
+      1.5
+    ],
+    "theta_output_clipping": false
+  }
+]
