@@ -1,0 +1,111 @@
+{
+  "version": "V1-I.7",
+  "overall_pass": true,
+  "checks": [
+    {
+      "check": "TEST_COMPLETE.complete",
+      "pass": true,
+      "detail": "True"
+    },
+    {
+      "check": "TEST_COMPLETE.test_once",
+      "pass": true,
+      "detail": "True"
+    },
+    {
+      "check": "TEST sample size lock",
+      "pass": true,
+      "detail": "20000"
+    },
+    {
+      "check": "TRAIN locked",
+      "pass": true,
+      "detail": "True"
+    },
+    {
+      "check": "VALIDATION no retuning",
+      "pass": true,
+      "detail": "True"
+    },
+    {
+      "check": "Manifest common random numbers",
+      "pass": true,
+      "detail": "True"
+    },
+    {
+      "check": "TEST_SEED_METRICS required columns",
+      "pass": true,
+      "detail": "all present"
+    },
+    {
+      "check": "TEST row count",
+      "pass": true,
+      "detail": "120 / 120"
+    },
+    {
+      "check": "No duplicate asset-seed-objective",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "check": "Expected assets",
+      "pass": true,
+      "detail": "['BTCUSDT', 'ETHUSDT']"
+    },
+    {
+      "check": "Expected objectives",
+      "pass": true,
+      "detail": "['expected_cost', 'global_kl', 'localized_kl', 'nominal_cvar']"
+    },
+    {
+      "check": "Expected seeds",
+      "pass": true,
+      "detail": "[101, 202, 303, 404, 505, 606, 707, 808, 909, 1001, 1111, 1212, 1313, 1414, 1515]"
+    },
+    {
+      "check": "All TEST metrics finite",
+      "pass": true,
+      "detail": "checked gamma,n,mean,cvar95,cvar99,train_frozen_exceedance_threshold,exceedance_rate,mean_excess_given_exceedance,completion"
+    },
+    {
+      "check": "All TEST n >= 20000",
+      "pass": true,
+      "detail": "[20000]"
+    },
+    {
+      "check": "Completion in [0,1]",
+      "pass": true,
+      "detail": "min=1, max=1"
+    },
+    {
+      "check": "Exceedance rate in [0,1]",
+      "pass": true,
+      "detail": "min=0.04305, max=0.06485"
+    },
+    {
+      "check": "One frozen exceedance threshold per asset",
+      "pass": true,
+      "detail": "{'BTCUSDT': 1, 'ETHUSDT': 1}"
+    },
+    {
+      "check": "TEST policies equal TRAIN-locked gamma",
+      "pass": true,
+      "detail": "[{'asset': 'BTCUSDT', 'objective': 'expected_cost', 'gamma_test': 0.5, 'gamma_train': 0.5, '_merge': 'both'}, {'asset': 'BTCUSDT', 'objective': 'nominal_cvar', 'gamma_test': 0.5, 'gamma_train': 0.5, '_merge': 'both'}, {'asset': 'BTCUSDT', 'objective': 'global_kl', 'gamma_test': 0.5, 'gamma_train': 0.5, '_merge': 'both'}, {'asset': 'BTCUSDT', 'objective': 'localized_kl', 'gamma_test': 0.7, 'gamma_train': 0.7, '_merge': 'both'}, {'asset': 'ETHUSDT', 'objective': 'expected_cost', 'gamma_test': 0.5, 'gamma_train': 0.5, '_merge': 'both'}, {'asset': 'ETHUSDT', 'objective': 'nominal_cvar', 'gamma_test': 0.5, 'gamma_train': 0.5, '_merge': 'both'}, {'asset': 'ETHUSDT', 'objective': 'global_kl', 'gamma_test': 0.4, 'gamma_train': 0.4, '_merge': 'both'}, {'asset': 'ETHUSDT', 'objective': 'localized_kl', 'gamma_test': 0.6, 'gamma_train': 0.6, '_merge': 'both'}]"
+    },
+    {
+      "check": "TEST_BOOTSTRAP_CI required columns",
+      "pass": true,
+      "detail": "all present"
+    },
+    {
+      "check": "Existing bootstrap uses 15 seeds",
+      "pass": true,
+      "detail": "[15]"
+    },
+    {
+      "check": "Existing bootstrap reps >= 5000",
+      "pass": true,
+      "detail": "[5000]"
+    }
+  ]
+}

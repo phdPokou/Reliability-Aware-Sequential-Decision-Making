@@ -1,0 +1,60 @@
+{
+  "version": "V1-I.6",
+  "protocol_sha256": "0791be105f4afd18170c7e5b12a74078afc684815414f713ecb80f46a99bcf50",
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505,
+    606,
+    707,
+    808,
+    909,
+    1001,
+    1111,
+    1212,
+    1313,
+    1414,
+    1515
+  ],
+  "gamma_grid": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "epsilon_grid": [
+    0.0,
+    0.02,
+    0.04,
+    0.08,
+    0.12,
+    0.16
+  ],
+  "objectives": [
+    "expected_cost",
+    "nominal_cvar",
+    "global_kl",
+    "localized_kl"
+  ],
+  "test_trajectories_per_policy_seed": 20000,
+  "asset_specific": true,
+  "common_random_numbers": true,
+  "btc_D3_outer_gate": "FAIL retained; diagnosed rare-outer-path sensitivity",
+  "guards": {
+    "theta_not_policy_input": true,
+    "no_asset_pooling": true,
+    "validation_no_retuning": true,
+    "test_once_after_lock": true,
+    "epsilon_008_not_publication_calibrated": true,
+    "delta_equals_epsilon_only_matched_budget": true
+  }
+}

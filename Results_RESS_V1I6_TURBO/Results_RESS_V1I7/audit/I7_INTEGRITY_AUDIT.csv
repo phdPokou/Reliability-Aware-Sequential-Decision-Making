@@ -1,0 +1,22 @@
+check,pass,detail
+TEST_COMPLETE.complete,True,True
+TEST_COMPLETE.test_once,True,True
+TEST sample size lock,True,20000
+TRAIN locked,True,True
+VALIDATION no retuning,True,True
+Manifest common random numbers,True,True
+TEST_SEED_METRICS required columns,True,all present
+TEST row count,True,120 / 120
+No duplicate asset-seed-objective,True,0
+Expected assets,True,"['BTCUSDT', 'ETHUSDT']"
+Expected objectives,True,"['expected_cost', 'global_kl', 'localized_kl', 'nominal_cvar']"
+Expected seeds,True,"[101, 202, 303, 404, 505, 606, 707, 808, 909, 1001, 1111, 1212, 1313, 1414, 1515]"
+All TEST metrics finite,True,"checked gamma,n,mean,cvar95,cvar99,train_frozen_exceedance_threshold,exceedance_rate,mean_excess_given_exceedance,completion"
+All TEST n >= 20000,True,[20000]
+"Completion in [0,1]",True,"min=1, max=1"
+"Exceedance rate in [0,1]",True,"min=0.04305, max=0.06485"
+One frozen exceedance threshold per asset,True,"{'BTCUSDT': 1, 'ETHUSDT': 1}"
+TEST policies equal TRAIN-locked gamma,True,"[{'asset': 'BTCUSDT', 'objective': 'expected_cost', 'gamma_test': 0.5, 'gamma_train': 0.5, '_merge': 'both'}, {'asset': 'BTCUSDT', 'objective': 'nominal_cvar', 'gamma_test': 0.5, 'gamma_train': 0.5, '_merge': 'both'}, {'asset': 'BTCUSDT', 'objective': 'global_kl', 'gamma_test': 0.5, 'gamma_train': 0.5, '_merge': 'both'}, {'asset': 'BTCUSDT', 'objective': 'localized_kl', 'gamma_test': 0.7, 'gamma_train': 0.7, '_merge': 'both'}, {'asset': 'ETHUSDT', 'objective': 'expected_cost', 'gamma_test': 0.5, 'gamma_train': 0.5, '_merge': 'both'}, {'asset': 'ETHUSDT', 'objective': 'nominal_cvar', 'gamma_test': 0.5, 'gamma_train': 0.5, '_merge': 'both'}, {'asset': 'ETHUSDT', 'objective': 'global_kl', 'gamma_test': 0.4, 'gamma_train': 0.4, '_merge': 'both'}, {'asset': 'ETHUSDT', 'objective': 'localized_kl', 'gamma_test': 0.6, 'gamma_train': 0.6, '_merge': 'both'}]"
+TEST_BOOTSTRAP_CI required columns,True,all present
+Existing bootstrap uses 15 seeds,True,[15]
+Existing bootstrap reps >= 5000,True,[5000]
