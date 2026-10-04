@@ -1,0 +1,156 @@
+{
+  "version": "V1-I.5-D.2",
+  "status": "PREDECLARED_NUMERICAL_DESIGN",
+  "factorization_dependency": "V1-I.5-D.1.1a",
+  "assets": [
+    "BTCUSDT",
+    "ETHUSDT"
+  ],
+  "pool_assets_for_optimization": false,
+  "alpha": 0.95,
+  "decision_horizon_T": 120,
+  "grid_seconds": 5.0,
+  "max_terminal_steps": 960,
+  "policy_class": {
+    "definition": "a_t(gamma)=gamma*min(q_t, max_participation*D_t^{b,K})",
+    "gamma_grid": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "gamma_zero_role": "audit endpoint; economically artificial because residual inventory is mechanically settled after H",
+    "same_class_for_all_objectives": true
+  },
+  "data_use_order": {
+    "TRAIN": "fit/freeze environment; construct asset-specific P_Theta; numerical convergence; select gamma within each objective and asset",
+    "VALIDATION": "one confirmation of TRAIN-selected numerical/policy choices; no retuning",
+    "TEST": "access once after design lock; final OOS reliability evaluation only",
+    "test_reuse_for_tuning": false
+  },
+  "common_random_numbers": {
+    "required": true,
+    "scope": "within each asset x seed x outer-design cell, reuse identical outer theta atoms and conditional replay seeds across every gamma and comparable objective",
+    "across_assets": false,
+    "purpose": "reduce Monte Carlo noise in policy/objective comparisons without changing marginal laws"
+  },
+  "localized_KL_radius": {
+    "epsilon_grid": [
+      0.0,
+      0.02,
+      0.04,
+      0.08,
+      0.12,
+      0.16
+    ],
+    "development_reference_value": 0.08,
+    "epsilon_0_role": "nominal identity check",
+    "epsilon_008_status": "development sensitivity point; NOT publication-calibrated",
+    "selection_rule": "No epsilon is selected by minimizing TEST loss. Report the full predeclared sensitivity grid. A primary radius may be designated only by an ex-ante TRAIN calibration rule documented before VALIDATION/TEST.",
+    "same_numeric_epsilon_across_assets_interpretation": "sensitivity comparison only; not empirical equivalence of ambiguity size",
+    "matched_global_delta_rule": "delta=epsilon may be used only as a matched-budget containment comparison under the same factorized cost law; not as calibration equivalence"
+  },
+  "inner_convergence": {
+    "L_ladder": [
+      512,
+      1024,
+      2048
+    ],
+    "primary_epsilon_for_gate": 0.08,
+    "gate_metric": "relative change of localized rho between the two largest common balanced L values",
+    "relative_tolerance": 0.05,
+    "additional_tail_precision_diagnostics": [
+      "per-outer exceedance count",
+      "SE(G_hat)",
+      "relative SE(G_hat)",
+      "KL-weighted SE proxy"
+    ],
+    "rule": "Use common balanced prefixes. Targeted allocation may improve precision after the balanced gate, but cannot by itself certify convergence."
+  },
+  "outer_convergence": {
+    "M_ladder": [
+      64,
+      128,
+      256
+    ],
+    "primary_epsilon_for_gate": 0.08,
+    "gate_metric": "relative change of localized rho between the two largest nested M values using common nested outer prefixes",
+    "relative_tolerance": 0.05,
+    "secondary_diagnostics": [
+      "effective outer sample size",
+      "maximum adversarial weight",
+      "top1/top5/top10 robust-excess contribution shares"
+    ],
+    "rule": "M convergence is assessed separately for each asset; failure for either asset blocks final policy selection for that asset."
+  },
+  "seeds": {
+    "evaluation_seeds": [
+      101,
+      202,
+      303,
+      404,
+      505,
+      606,
+      707,
+      808,
+      909,
+      1001,
+      1111,
+      1212,
+      1313,
+      1414,
+      1515
+    ],
+    "n_seeds": 15,
+    "seed_role": "independent replication layer; CRN is maintained across gamma within a seed"
+  },
+  "test_evaluation": {
+    "trajectories_per_policy_seed_minimum": 20000,
+    "bootstrap_confidence_intervals": true,
+    "report_separately_by_asset": true,
+    "reliability_metrics": [
+      "mean cost",
+      "VaR_0.95",
+      "CVaR_0.95",
+      "localized robust tail criterion",
+      "global-KL robust tail criterion",
+      "exceedance frequency",
+      "tail severity conditional on exceedance",
+      "settlement exhaustion/failure rate"
+    ],
+    "exceedance_frequency_and_severity_kept_distinct": true
+  },
+  "benchmark_objectives": {
+    "required": [
+      "Expected Cost",
+      "Nominal CVaR",
+      "Global-KL",
+      "Localized-KL"
+    ],
+    "same_factorized_environment_required": true,
+    "legacy_I2_I4_results_final_comparison_eligible": false
+  },
+  "stop_rules": {
+    "no_gamma_selection_before_inner_outer_gates": true,
+    "no_test_before_train_selection_and_validation_confirmation": true,
+    "no_pooling_BTC_ETH": true,
+    "no_posthoc_normalization_objective": true,
+    "no_recycling_C_stage_matrices_as_final_results": true
+  },
+  "interpretation_guards": {
+    "finite_empirical_exponential_moments_do_not_prove_population_entropic_admissibility": true,
+    "nested_estimator_not_claimed_unbiased": true,
+    "clipping_changes_objective": true,
+    "theta_not_policy_input": true,
+    "post_H_latent_scales_are_nominal_kernel_randomness_not_KL_ambiguous": true,
+    "policy_optimality_claim_limited_to_numerical_gamma_grid": true
+  },
+  "design_sha256": "0791be105f4afd18170c7e5b12a74078afc684815414f713ecb80f46a99bcf50"
+}
