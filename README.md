@@ -35,6 +35,12 @@ The computational experiment compares four policy-selection criteria:
 
 The empirical application uses **Bitcoin (BTCUSDT)** and **Ether (ETHUSDT)** spot-market data and preserves a strictly chronological experimental protocol.
 
+<p>
+  <a href="https://doi.org/10.5281/zenodo.23136337">
+    <img src="https://img.shields.io/badge/Zenodo-Replication%20Archive-1682D4?logo=zenodo&logoColor=white" alt="Zenodo Replication Archive">
+  </a>
+</p>
+
 This repository is intended to support verification and computational reproducibility of the numerical and empirical results reported in the paper. It does not imply that the maintained stochastic model exhausts all forms of market or model uncertainty.
 
 ---
