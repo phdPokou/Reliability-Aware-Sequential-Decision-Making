@@ -96,14 +96,14 @@ The final statistical analysis is performed only after completion of the locked 
 | Component | Specification |
 |---|---|
 | Assets | BTCUSDT, ETHUSDT |
-| Decision horizon | \(T=120\) |
+| Decision horizon | $T=120$ |
 | Temporal grid | 5 seconds |
-| Tail level | \(\alpha=0.95\) |
-| Policy grid | \(\gamma \in \{0.0,0.1,\ldots,1.0\}\) |
+| Tail level | $\alpha=0.95$ |
+| Policy grid | $\gamma \in \{0.0,0.1,\ldots,1.0\}$ |
 | Objectives | Expected Cost, Nominal CVaR, Global-KL, Localized-KL |
-| Localized-KL sensitivity grid | \(\epsilon \in \{0,0.02,0.04,0.08,0.12,0.16\}\) |
+| Localized-KL sensitivity grid | $\epsilon \in \{0,0.02,0.04,0.08,0.12,0.16\}$ |
 | Evaluation seeds | 15 predeclared seeds |
-| TEST simulations | \(\geq 20,000\) trajectories per selected policy and seed |
+| TEST simulations | $\geq 20,000$ trajectories per selected policy and seed |
 | Asset pooling | None |
 | Variance reduction | Common random numbers within admissible comparisons |
 | Policy information | Observable state/history only |
