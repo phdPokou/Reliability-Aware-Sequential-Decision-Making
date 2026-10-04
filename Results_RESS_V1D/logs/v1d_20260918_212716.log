@@ -1,0 +1,25 @@
+2026-09-18 21:27:16,287 | INFO | Canonical files discovered: 25
+2026-09-18 21:27:16,605 | INFO | Load [2/25] tardis_binance_BTCUSDT_2025-01-01_K10.parquet rows=681957 K=10
+2026-09-18 21:27:16,823 | INFO | Load [3/25] tardis_binance_BTCUSDT_2025-02-01_K10.parquet rows=698280 K=10
+2026-09-18 21:27:17,095 | INFO | Load [4/25] tardis_binance_BTCUSDT_2025-03-01_K10.parquet rows=779407 K=10
+2026-09-18 21:27:17,370 | INFO | Load [5/25] tardis_binance_BTCUSDT_2025-04-01_K10.parquet rows=751844 K=10
+2026-09-18 21:27:17,613 | INFO | Load [6/25] tardis_binance_BTCUSDT_2025-05-01_K10.parquet rows=693749 K=10
+2026-09-18 21:27:17,865 | INFO | Load [7/25] tardis_binance_BTCUSDT_2025-06-01_K10.parquet rows=676284 K=10
+2026-09-18 21:27:18,124 | INFO | Load [8/25] tardis_binance_BTCUSDT_2025-07-01_K10.parquet rows=723822 K=10
+2026-09-18 21:27:18,456 | INFO | Load [9/25] tardis_binance_BTCUSDT_2025-08-01_K10.parquet rows=828835 K=10
+2026-09-18 21:27:18,769 | INFO | Load [10/25] tardis_binance_BTCUSDT_2025-09-01_K10.parquet rows=796827 K=10
+2026-09-18 21:27:19,089 | INFO | Load [11/25] tardis_binance_BTCUSDT_2025-10-01_K10.parquet rows=781647 K=10
+2026-09-18 21:27:19,358 | INFO | Load [12/25] tardis_binance_BTCUSDT_2025-11-01_K10.parquet rows=729192 K=10
+2026-09-18 21:27:19,695 | INFO | Load [13/25] tardis_binance_BTCUSDT_2025-12-01_K10.parquet rows=815217 K=10
+2026-09-18 21:27:19,988 | INFO | Load [14/25] tardis_binance_ETHUSDT_2025-01-01_K10.parquet rows=724531 K=10
+2026-09-18 21:27:20,306 | INFO | Load [15/25] tardis_binance_ETHUSDT_2025-02-01_K10.parquet rows=811576 K=10
+2026-09-18 21:27:20,671 | INFO | Load [16/25] tardis_binance_ETHUSDT_2025-03-01_K10.parquet rows=839335 K=10
+2026-09-18 21:27:21,045 | INFO | Load [17/25] tardis_binance_ETHUSDT_2025-04-01_K10.parquet rows=822257 K=10
+2026-09-18 21:27:21,374 | INFO | Load [18/25] tardis_binance_ETHUSDT_2025-05-01_K10.parquet rows=761837 K=10
+2026-09-18 21:27:21,726 | INFO | Load [19/25] tardis_binance_ETHUSDT_2025-06-01_K10.parquet rows=749665 K=10
+2026-09-18 21:27:22,075 | INFO | Load [20/25] tardis_binance_ETHUSDT_2025-07-01_K10.parquet rows=783441 K=10
+2026-09-18 21:27:22,417 | INFO | Load [21/25] tardis_binance_ETHUSDT_2025-08-01_K10.parquet rows=839936 K=10
+2026-09-18 21:27:22,772 | INFO | Load [22/25] tardis_binance_ETHUSDT_2025-09-01_K10.parquet rows=831148 K=10
+2026-09-18 21:27:23,103 | INFO | Load [23/25] tardis_binance_ETHUSDT_2025-10-01_K10.parquet rows=780924 K=10
+2026-09-18 21:27:23,403 | INFO | Load [24/25] tardis_binance_ETHUSDT_2025-11-01_K10.parquet rows=642339 K=10
+2026-09-18 21:27:23,793 | INFO | Load [25/25] tardis_binance_ETHUSDT_2025-12-01_K10.parquet rows=799317 K=10
