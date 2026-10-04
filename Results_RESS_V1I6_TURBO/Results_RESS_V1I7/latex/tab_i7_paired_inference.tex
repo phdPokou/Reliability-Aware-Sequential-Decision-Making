@@ -1,0 +1,36 @@
+\begin{table}[!htbp]
+\centering
+\caption{Paired seed-level comparison of Localized-KL against the locked comparator policies. Differences are Localized-KL minus comparator; negative differences favor Localized-KL for cost and risk metrics.}
+\label{tab:i7_paired_inference}
+\small
+\begin{tabular}{lllrrrrrrr}
+\toprule
+asset & comparator & metric & mean\_delta\_localized\_minus\_comparator & relative\_delta\_pct & paired\_ci025 & paired\_ci975 & share\_seeds\_localized\_better & sign\_test\_p\_two\_sided & wilcoxon\_p\_two\_sided \\
+\midrule
+BTCUSDT & expected\_cost & mean & 2.05081e-05 & 2.59948 & 7.30196e-06 & 3.75083e-05 & 0.333333 & 0.301758 & 0.0180664 \\
+BTCUSDT & expected\_cost & cvar95 & 0.000472648 & 9.89204 & 0.000203777 & 0.000816304 & 0.0666667 & 0.000976562 & 0.000183105 \\
+BTCUSDT & expected\_cost & cvar99 & 0.00233077 & 17.1867 & 0.00106913 & 0.0039965 & 0.0666667 & 0.000976562 & 0.00012207 \\
+BTCUSDT & expected\_cost & exceedance\_rate & 0.000396667 & 0.647972 & -0.000283333 & 0.00107667 & 0.333333 & 0.42395 & 0.346254 \\
+BTCUSDT & nominal\_cvar & mean & 2.05081e-05 & 2.59948 & 7.24301e-06 & 3.75884e-05 & 0.333333 & 0.301758 & 0.0180664 \\
+BTCUSDT & nominal\_cvar & cvar95 & 0.000472648 & 9.89204 & 0.000204856 & 0.000811704 & 0.0666667 & 0.000976562 & 0.000183105 \\
+BTCUSDT & nominal\_cvar & cvar99 & 0.00233077 & 17.1867 & 0.00106472 & 0.00399124 & 0.0666667 & 0.000976562 & 0.00012207 \\
+BTCUSDT & nominal\_cvar & exceedance\_rate & 0.000396667 & 0.647972 & -0.00028675 & 0.00107667 & 0.333333 & 0.42395 & 0.346254 \\
+BTCUSDT & global\_kl & mean & 2.05081e-05 & 2.59948 & 7.24778e-06 & 3.75762e-05 & 0.333333 & 0.301758 & 0.0180664 \\
+BTCUSDT & global\_kl & cvar95 & 0.000472648 & 9.89204 & 0.000207554 & 0.000814179 & 0.0666667 & 0.000976562 & 0.000183105 \\
+BTCUSDT & global\_kl & cvar99 & 0.00233077 & 17.1867 & 0.00107313 & 0.00398592 & 0.0666667 & 0.000976562 & 0.00012207 \\
+BTCUSDT & global\_kl & exceedance\_rate & 0.000396667 & 0.647972 & -0.000283333 & 0.00108333 & 0.333333 & 0.42395 & 0.346254 \\
+ETHUSDT & expected\_cost & mean & -0.000327794 & -1.57388 & -0.000346303 & -0.000310454 & 1 & 6.10352e-05 & 6.10352e-05 \\
+ETHUSDT & expected\_cost & cvar95 & -0.00207562 & -3.15974 & -0.00240476 & -0.00177206 & 1 & 6.10352e-05 & 6.10352e-05 \\
+ETHUSDT & expected\_cost & cvar99 & -0.000547662 & -0.397073 & -0.00215363 & 0.000892263 & 0.333333 & 0.301758 & 0.934082 \\
+ETHUSDT & expected\_cost & exceedance\_rate & -0.00362333 & -7.23076 & -0.00416333 & -0.00306667 & 1 & 6.10352e-05 & 6.10352e-05 \\
+ETHUSDT & nominal\_cvar & mean & -0.000327794 & -1.57388 & -0.000346047 & -0.000310369 & 1 & 6.10352e-05 & 6.10352e-05 \\
+ETHUSDT & nominal\_cvar & cvar95 & -0.00207562 & -3.15974 & -0.00240552 & -0.00177324 & 1 & 6.10352e-05 & 6.10352e-05 \\
+ETHUSDT & nominal\_cvar & cvar99 & -0.000547662 & -0.397073 & -0.00216245 & 0.000885814 & 0.333333 & 0.301758 & 0.934082 \\
+ETHUSDT & nominal\_cvar & exceedance\_rate & -0.00362333 & -7.23076 & -0.00416333 & -0.00306333 & 1 & 6.10352e-05 & 6.10352e-05 \\
+ETHUSDT & global\_kl & mean & -0.00103432 & -4.80326 & -0.00107297 & -0.00100076 & 1 & 6.10352e-05 & 6.10352e-05 \\
+ETHUSDT & global\_kl & cvar95 & -0.00845117 & -11.7271 & -0.00904933 & -0.00790902 & 1 & 6.10352e-05 & 6.10352e-05 \\
+ETHUSDT & global\_kl & cvar99 & -0.00713778 & -4.93913 & -0.0102113 & -0.00422577 & 0.866667 & 0.00738525 & 0.000427246 \\
+ETHUSDT & global\_kl & exceedance\_rate & -0.01305 & -21.9193 & -0.0137167 & -0.0123733 & 1 & 6.10352e-05 & 6.10352e-05 \\
+\bottomrule
+\end{tabular}
+\end{table}

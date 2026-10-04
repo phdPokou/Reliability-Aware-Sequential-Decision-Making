@@ -1,0 +1,60 @@
+{
+  "version": "V1-I.6-TURBO.1-TRAIN",
+  "locked": true,
+  "selection": [
+    {
+      "asset": "BTCUSDT",
+      "objective": "expected_cost",
+      "gamma": 0.5,
+      "train_value": 0.0007268702429383577
+    },
+    {
+      "asset": "BTCUSDT",
+      "objective": "global_kl",
+      "gamma": 0.5,
+      "train_value": 0.15336179875642447
+    },
+    {
+      "asset": "BTCUSDT",
+      "objective": "localized_kl",
+      "gamma": 0.7,
+      "train_value": 0.006316860680532882
+    },
+    {
+      "asset": "BTCUSDT",
+      "objective": "nominal_cvar",
+      "gamma": 0.5,
+      "train_value": 0.0037535660093304113
+    },
+    {
+      "asset": "ETHUSDT",
+      "objective": "expected_cost",
+      "gamma": 0.5,
+      "train_value": 0.0244787464889991
+    },
+    {
+      "asset": "ETHUSDT",
+      "objective": "global_kl",
+      "gamma": 0.4,
+      "train_value": 0.8902383604306313
+    },
+    {
+      "asset": "ETHUSDT",
+      "objective": "localized_kl",
+      "gamma": 0.6,
+      "train_value": 0.07475122291748948
+    },
+    {
+      "asset": "ETHUSDT",
+      "objective": "nominal_cvar",
+      "gamma": 0.5,
+      "train_value": 0.0644875194275713
+    }
+  ],
+  "BTC_D3_outer_gate": "FAIL retained",
+  "shared_exogenous_paths": true,
+  "batched_gamma_evaluation": true,
+  "outer_checkpoint_resume": true,
+  "no_validation": true,
+  "no_test": true
+}

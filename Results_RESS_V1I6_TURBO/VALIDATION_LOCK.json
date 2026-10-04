@@ -1,0 +1,55 @@
+{
+  "version": "V1-I.6-TURBO.1-VALIDATION",
+  "confirmed_without_retuning": true,
+  "rows": [
+    {
+      "asset": "BTCUSDT",
+      "objective": "expected_cost",
+      "locked_gamma": 0.5,
+      "validation_value": 0.000757063174904855
+    },
+    {
+      "asset": "BTCUSDT",
+      "objective": "nominal_cvar",
+      "locked_gamma": 0.5,
+      "validation_value": 0.003914772001333518
+    },
+    {
+      "asset": "BTCUSDT",
+      "objective": "global_kl",
+      "locked_gamma": 0.5,
+      "validation_value": 0.02429580610657764
+    },
+    {
+      "asset": "BTCUSDT",
+      "objective": "localized_kl",
+      "locked_gamma": 0.7,
+      "validation_value": 0.0038598561448877134
+    },
+    {
+      "asset": "ETHUSDT",
+      "objective": "global_kl",
+      "locked_gamma": 0.4,
+      "validation_value": 0.30895633880422574
+    },
+    {
+      "asset": "ETHUSDT",
+      "objective": "expected_cost",
+      "locked_gamma": 0.5,
+      "validation_value": 0.018587733410417737
+    },
+    {
+      "asset": "ETHUSDT",
+      "objective": "nominal_cvar",
+      "locked_gamma": 0.5,
+      "validation_value": 0.05065925605112377
+    },
+    {
+      "asset": "ETHUSDT",
+      "objective": "localized_kl",
+      "locked_gamma": 0.6,
+      "validation_value": 0.05854500595076606
+    }
+  ],
+  "no_test": true
+}

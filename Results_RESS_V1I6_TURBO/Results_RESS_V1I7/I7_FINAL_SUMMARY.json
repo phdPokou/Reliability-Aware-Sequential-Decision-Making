@@ -1,0 +1,145 @@
+{
+  "version": "V1-I.7",
+  "status": "COMPLETE",
+  "simulation_performed": false,
+  "policy_retuning_performed": false,
+  "input_directory": "C:\\Users\\fredy\\Downloads\\Results_RESS_V1I6_TURBO",
+  "integrity_audit_pass": true,
+  "inference_unit": "seed",
+  "paired_design": "same predeclared seeds / CRN-compatible seed-level comparison",
+  "paired_bootstrap_reps": 50000,
+  "primary_policy": "localized_kl",
+  "comparators": [
+    "expected_cost",
+    "nominal_cvar",
+    "global_kl"
+  ],
+  "headline_vs_expected_cost": [
+    {
+      "asset": "BTCUSDT",
+      "metric": "mean",
+      "comparison": "localized_kl_minus_expected_cost",
+      "delta": 2.050811031461999e-05,
+      "relative_delta_pct": 2.599480718050737,
+      "paired_ci95": [
+        7.301964295046982e-06,
+        3.7508329233283994e-05
+      ],
+      "share_seeds_localized_better": 0.3333333333333333
+    },
+    {
+      "asset": "BTCUSDT",
+      "metric": "cvar95",
+      "comparison": "localized_kl_minus_expected_cost",
+      "delta": 0.0004726484122370198,
+      "relative_delta_pct": 9.892038247784336,
+      "paired_ci95": [
+        0.00020377725923753003,
+        0.0008163037782528677
+      ],
+      "share_seeds_localized_better": 0.06666666666666667
+    },
+    {
+      "asset": "BTCUSDT",
+      "metric": "cvar99",
+      "comparison": "localized_kl_minus_expected_cost",
+      "delta": 0.0023307672215983734,
+      "relative_delta_pct": 17.186732387070204,
+      "paired_ci95": [
+        0.0010691330843833557,
+        0.003996499751037715
+      ],
+      "share_seeds_localized_better": 0.06666666666666667
+    },
+    {
+      "asset": "BTCUSDT",
+      "metric": "exceedance_rate",
+      "comparison": "localized_kl_minus_expected_cost",
+      "delta": 0.0003966666666666669,
+      "relative_delta_pct": 0.6479716852708961,
+      "paired_ci95": [
+        -0.0002833333333333322,
+        0.0010766666666666678
+      ],
+      "share_seeds_localized_better": 0.3333333333333333
+    },
+    {
+      "asset": "BTCUSDT",
+      "metric": "mean_excess_given_exceedance",
+      "comparison": "localized_kl_minus_expected_cost",
+      "delta": 0.00036772731948995336,
+      "relative_delta_pct": 12.529007144855267,
+      "paired_ci95": [
+        0.000153857203876879,
+        0.0006525699794795055
+      ],
+      "share_seeds_localized_better": 0.13333333333333333
+    },
+    {
+      "asset": "ETHUSDT",
+      "metric": "mean",
+      "comparison": "localized_kl_minus_expected_cost",
+      "delta": -0.00032779417848800005,
+      "relative_delta_pct": -1.5738752059328422,
+      "paired_ci95": [
+        -0.00034630251715414383,
+        -0.0003104543355600504
+      ],
+      "share_seeds_localized_better": 1.0
+    },
+    {
+      "asset": "ETHUSDT",
+      "metric": "cvar95",
+      "comparison": "localized_kl_minus_expected_cost",
+      "delta": -0.002075617421699533,
+      "relative_delta_pct": -3.159736252373321,
+      "paired_ci95": [
+        -0.00240476011450334,
+        -0.0017720575375782283
+      ],
+      "share_seeds_localized_better": 1.0
+    },
+    {
+      "asset": "ETHUSDT",
+      "metric": "cvar99",
+      "comparison": "localized_kl_minus_expected_cost",
+      "delta": -0.0005476619975402903,
+      "relative_delta_pct": -0.39707279603178264,
+      "paired_ci95": [
+        -0.0021536316391800236,
+        0.0008922634415690534
+      ],
+      "share_seeds_localized_better": 0.3333333333333333
+    },
+    {
+      "asset": "ETHUSDT",
+      "metric": "exceedance_rate",
+      "comparison": "localized_kl_minus_expected_cost",
+      "delta": -0.003623333333333334,
+      "relative_delta_pct": -7.2307589968735435,
+      "paired_ci95": [
+        -0.004163333333333335,
+        -0.0030666666666666668
+      ],
+      "share_seeds_localized_better": 1.0
+    },
+    {
+      "asset": "ETHUSDT",
+      "metric": "mean_excess_given_exceedance",
+      "comparison": "localized_kl_minus_expected_cost",
+      "delta": 0.00020594842522152028,
+      "relative_delta_pct": 0.6671661968112371,
+      "paired_ci95": [
+        -0.00022662510500421975,
+        0.0006033032002292347
+      ],
+      "share_seeds_localized_better": 0.3333333333333333
+    }
+  ],
+  "notes": [
+    "Assets are analyzed separately; no pooled BTC/ETH efficacy claim is constructed.",
+    "Paired bootstrap confidence intervals are primary for policy differences.",
+    "Sign and Wilcoxon tests are secondary diagnostics and are not used for p-value-based model selection.",
+    "Reliability exceedance thresholds remain frozen from TRAIN and are never re-estimated on TEST."
+  ]
+}
